@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingTop="50dp">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLed1"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="LED 1 - OFF"/>
+
+        <Button
+            android:id="@+id/btnLed2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="LED 2 - OFF"/>
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLed3"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="LED 3 - OFF"/>
+
+        <Button
+            android:id="@+id/btnTodos"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Todos"/>
+
+    </GridLayout>
+
+
+        <TextView
+            android:id="@+id/txtLdr"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="#FF0000"
+            android:text="0"/>
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/txtResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"/>
+
+
+</LinearLayout>
